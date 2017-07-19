@@ -1,0 +1,29 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "build-all",
+      "appliesTo": "*",
+      "contextType": "build",
+      "type": "launch",
+      "command": "${env.COMSPEC}",
+      "args": [
+        "cd \"${workspaceRoot}\" &&",
+        "mkdir bin &",
+        "g++ -g -c -o bin/helper.o helper.cpp &&",
+        "ghc -rtsopts -dcore-lint -debug -g -o bin/hello.exe -outputdir bin hello.hs bin/helper.o"
+      ]
+    },
+    {
+      "taskName": "clean-all",
+      "appliesTo": "*",
+      "contextType": "clean",
+      "type": "launch",
+      "command": "${env.COMSPEC}",
+      "args": [
+        "cd \"${workspaceRoot}\" &&",
+        "rmdir /s /q bin"
+      ]
+    }
+  ]
+}

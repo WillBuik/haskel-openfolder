@@ -1,0 +1,9 @@
+{
+  "environments": [
+    {
+      "MINGW_PREFIX": "C:\\msys64\\mingw64",
+      "PATH":  "${env.MINGW_PREFIX}\\bin;${env.PATH}"
+    }
+  ],
+  "configurations": []
+}
