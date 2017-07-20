@@ -3,6 +3,7 @@
 This repo includes a simple Haskell demo program and the related tasks.vs.json
 and launch.vs.json configuration required to build and debug it with Visual
 Studio 2017 - this currently requires the latest preview release.
+https://www.visualstudio.com/vs/preview/
 
 You can also get syntax highlighiting and basic code completion by installing
 a Haskell TextMate bundle for VS, such as https://github.com/textmate/haskell.tmbundle.
